@@ -1,7 +1,10 @@
 import random
 
-def sorteio():
+def sorteio(lista = []):
     sorteados = []
+    for item in lista:
+        sorteados.append(item)
+    
     while len(sorteados) < 15:
         ale = random.randint(1,25)
         
@@ -9,8 +12,8 @@ def sorteio():
             sorteados.remove(ale)
         else:
             sorteados.append(ale)
+    sorteados.sort()
     return sorteados
 
-resultado = sorteio()
-resultado.sort()
-print(resultado)
+checa = []
+print(sorteio(checa))
