@@ -9,7 +9,7 @@ def sorteio(lista = []):
         ale = random.randint(1,25)
         
         if sorteados.count(ale) == 1:
-            sorteados.remove(ale)
+            ale = random.randint(1,25)
         else:
             sorteados.append(ale)
     sorteados.sort()
