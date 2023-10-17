@@ -15,5 +15,25 @@ def sorteio(lista = []):
     sorteados.sort()
     return sorteados
 
-checa = []
-print(sorteio(checa))
+def jogar ():
+
+    njogos = int (input("Quantos jogos você quer jogar? "))
+    cercar = input ("Quer carcar algum número? ")
+    ncercados = []
+    lista = []
+
+    if cercar == "S" or "s" or "Y" or "y":
+        ncercar = int (input("Quantos números deseja cercar? "))
+        for x in range(ncercar):
+            ndigitado = int (input("Digite o número: "))
+            ncercados.append(ndigitado)
+        for item in ncercados:
+            lista.append(item)
+        
+        for x in range(njogos):
+            
+            print(sorteio(lista))
+
+
+    
+jogar()
