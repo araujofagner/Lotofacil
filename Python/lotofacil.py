@@ -22,7 +22,7 @@ def jogar ():
     ncercados = []
     lista = []
 
-    if cercar == "S" or "s" or "Y" or "y":
+    if cercar == "S" or cercar == "s" or cercar == "Y" or cercar == "y":
         ncercar = int (input("Quantos números deseja cercar? "))
         for x in range(ncercar):
             ndigitado = int (input("Digite o número: "))
@@ -33,7 +33,9 @@ def jogar ():
         for x in range(njogos):
             
             print(sorteio(lista))
-
-
-    
+    else:
+        for x in range(njogos):
+            
+            print(sorteio(lista))
+ 
 jogar()
